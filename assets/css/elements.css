@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* #FOI COLOCADO 62.5%, PARA PODER USAR A UNIDADE DE MEDIDA (REM). */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+/* #FONTE PARA TODO O BODY. */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+/* #FONTE, PARA TODOS OS HEADERS. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/* #ESTA SENDO DETERMINADO, UM TAMNHO DE FONTE PARA CADA HEADER. */
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+h3 {
+  font-size: 5rem;
+}
+h4 {
+  font-size: 4.5rem;
+}
+h5 {
+  font-size: 4rem;
+}
+h6 {
+  font-size: 3.5rem;
+}
+
+p {
+  margin-bottom: 3rem;
+}
+/* #ESSAS LINHAS DE CODICO TEM-SE A FUNCAO DE QUEBRAR A TABELA QUANDO O TAMANO MINIMO FOI MENOR QUE 36REM. */
+.responsive-table {
+  overflow: hidden;
+  overflow-x: auto;
+}
+/* #BORDER-COLLAPSE, ESTA JUNTANDO AS LINHAS DAS BORDAS DOS CONTEUDOS EM UMA. */
+table {
+  min-width: 36rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+table caption {
+  font-style: italic;
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+/* #WHITE-SPACE:NOWRAP TEM A FUNCAO DE SUPRIMIR AS QUBRAS DE LINHAS, NO TEXTO. */
+table td,
+table th {
+  white-space: nowrap;
+  padding: 1rem;
+  text-align: left;
+  border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot td,
+table th {
+  background: var(--light-gray-color);
+}

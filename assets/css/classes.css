@@ -1,0 +1,31 @@
+/* #AQUI FOI CRIADO UMA CLASSE, COM UMA SVG DE FUNDO, AONDE PODE SER USADO EM ALGUMAS SECTIONS.  */
+.main-bg {
+  background-image: url(/assets/img/confetti-doodles.svg);
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+/* #AQUI FOI CRIADO UMA CLASSE, COM UM FUNDO BRANCO, AONDE PODE SER USADO EM ALGUMAS SECTIONS. */
+.white-bg {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+/* AQUI FOI CRIADO UMA CLASSE PARA O CONTEUDO DA SECTION. */
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem var(--gap);
+}
+/* #CLASSE (SECTION) PARA AS SECTIONS QUE IRAO TER NO SITE, NO QUAL POSSUIRA UM MIN-HEIGHT DE 100(VH) */
+.section {
+  min-height: 100vh;
+}
+
+.menu-spacing {
+  height: 65px;
+}
+
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}

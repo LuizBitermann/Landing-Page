@@ -1,0 +1,65 @@
+/* #ESTE E O MENU TODO, AONDE ESTA DETERMINANDO O TAMANHO, E O FIXANDO NO SITE */
+.menu {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 0.1rem solid var(--light-gray-color);
+}
+/* #ESTE E AONDE ESTA O CONTEUDO DO MENU, AQUI ESTA ALINHANDO O CONTEUDO DENTRO DO MENU */
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* #ESTA ESTILIZANDO A LOGO(H1) */
+.menu h1 {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  transition: all 300ms ease-in-out;
+}
+.menu h1:hover {
+  transform: scale(1.1);
+}
+.menu h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+/* #ESTA BOTANDO UM DISPLAY-FLEX PARA ALINHAR O CONTEUDO DA UL, QUE SERIA O (a) */
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+/* #AQUI FOI COLOCADO UM DISPLAY-BLOCK, PARA PODER MODIFICAR AS PROPRIEDADES DE (a).
+     #PADDING DE 2REM, ESTA AUMENTANDO O MENU E ESPACANDO O CONTEUDO.
+     #POSITION-RELATIVE ESTA RELATIVO AO FILHO ABAIXO, PARA PODER TER UM EFEITO ABAIXO. */
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  position: relative;
+}
+/* DEPOIS DO ELEMENTO A, IRA TER UM CONTEUDO COM POSICAO ABSOLUTA EM RELACAO AO PAI(a)
+      #IRA APARECER UMA LINHA VERMELHA COM UMA TRANSICAO DEPOIS QUE O MOUSE PASSAR POR CIMA.*/
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: var(--secondary-color);
+  transition: all 300ms ease-in-out;
+}
+/* PSEUDO ELEMENTO HOVER */
+.menu ul li a:hover::after {
+  width: 50%;
+  left: 25%;
+}
